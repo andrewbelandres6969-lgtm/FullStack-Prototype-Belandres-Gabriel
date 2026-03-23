@@ -1,0 +1,46 @@
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+body.not-authenticated .role-logged-in {
+  display: none !important;
+}
+
+body.authenticated .role-logged-out {
+  display: none !important;
+}
+
+.role-admin {
+  display: none !important;
+}
+
+body.is-admin .role-admin {
+  display: inline-flex !important;
+}
+
+main {
+  min-height: 70vh;
+}
+
+#profile-content .badge {
+  font-size: 0.85rem;
+}
+
+.request-item-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.request-item-row input[type="text"],
+.request-item-row input[type="number"] {
+  flex: 1;
+}
+
+.request-item-row button {
+  flex-shrink: 0;
+}
+
